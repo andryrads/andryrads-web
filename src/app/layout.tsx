@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -18,6 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <title>
+          It's me, andryrads
+        </title>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
