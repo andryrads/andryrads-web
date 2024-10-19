@@ -9,6 +9,7 @@ import Skill from "../components/skill"
 import Certification from "../components/certification"
 import Portfolio from "../components/portfolio"
 import Contact from "../components/contact"
+import Footer from "../components/footer"
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Portfolio />
         <Contact />
       </main>
+      <Footer />
     </Box>
   );
 }
