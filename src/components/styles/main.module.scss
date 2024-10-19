@@ -83,16 +83,50 @@
 }
 
 // Responsive section
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .nameWrapper {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 100px;
+    left: 140px;
   }
   .circle1 {
     position: absolute;
     bottom: 80px;
-    right: -80px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+  }
+  .circle2 {
+    display: none;
+  }
+  .myPhoto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nameWrapper {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+  .nameWrapper h1 {
+    font-size: 40px;
+  }
+  .nameWrapper h3 {
+    font-size: 30px;
+  }
+  .nameWrapper .subtitle {
+    font-size: 12px !important;
+  }
+  .circle1 {
+    position: absolute;
+    bottom: 80px;
+    right: -50px;
     width: 300px;
     height: 300px;
   }
