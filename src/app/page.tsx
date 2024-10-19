@@ -8,6 +8,7 @@ import Quote from "../components/quote"
 import Skill from "../components/skill"
 import Certification from "../components/certification"
 import Portfolio from "../components/portfolio"
+import Contact from "../components/contact"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Skill />
         <Certification />
         <Portfolio />
+        <Contact />
       </main>
     </Box>
   );
