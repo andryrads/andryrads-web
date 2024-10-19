@@ -36,7 +36,6 @@ const handleDownload = () => {
   const url = 'https://drive.google.com/uc?export=download&id=10ctK3kIUxgNYziGgedZc2MWnXoYBGfaA';
   const link = document.createElement('a');
   link.href = url;
-  link.setAttribute('download', 'portfolio-andryrads.pdf');
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
