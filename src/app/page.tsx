@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Navbar from "../components/navbar"
 import Main from "../components/main"
 import About from "../components/about"
+import Quote from "../components/quote"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <main>
         <Main />
         <About />
+        <Quote />
       </main>
     </Box>
   );
