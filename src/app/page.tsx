@@ -6,6 +6,7 @@ import Main from "../components/main"
 import About from "../components/about"
 import Quote from "../components/quote"
 import Skill from "../components/skill"
+import Certification from "../components/certification"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <Quote />
         <Skill />
+        <Certification />
       </main>
     </Box>
   );

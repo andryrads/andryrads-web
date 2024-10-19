@@ -1,0 +1,26 @@
+.container {
+  background-color: #fff;
+  padding: 100px;
+  padding-top: 150px;
+}
+.headTitle {
+  font-size: 30px;
+  font-weight: 200;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  display: inline-block;
+  width: 250px;
+  color: #fff;
+  text-align:center;
+}
+
+// Responsive section
+@media (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+  .headTitle {
+    font-size: 15px;
+    width: 150px;
+  }
+}
