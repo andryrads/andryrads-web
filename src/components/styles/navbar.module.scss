@@ -29,3 +29,43 @@
 .navbar ul li a:hover {
   color: black;
 }
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+// hamburger menu section
+@media (max-width: 768px) {
+  .navbar {
+    padding: 5px 0 5px 10px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 0;
+    opacity: 0;
+  }
+  .menu.open {
+    max-height: 500px;
+    opacity: 1;
+  }
+  .menu ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .menu li {
+    margin: 1rem 0;
+    padding: 10px;
+  }
+}
