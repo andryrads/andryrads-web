@@ -12,13 +12,15 @@
   width: 300px;
   display: flex;
   flex-direction: column;
-  background-color: var(--accent-color);
   justify-content: center;
   align-items: center;
 }
 .contactIcon {
   font-size: 120px;
   color: var(--primary-color)
+}
+.contactIcon:hover {
+  color: var(--secondary-color)
 }
 .contactText {
   margin-top: 50px;
