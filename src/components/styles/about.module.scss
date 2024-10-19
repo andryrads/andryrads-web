@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.aboutPhoto {
+  margin: 100px;
+  width: auto;
+  height: auto;
+}
+.aboutTitleFirst {
+  background-color: var(--primary-color);
+  padding: 0px 11px;
+  color: #fff;
+  margin-right: -3px;
+}
+.aboutText {
+  font-size: 15px;
+  font-weight: 250;
+  padding-right: 100px;
+}
+// Responsive section
+@media (max-width: 1024px) {
+  .aboutPhoto {
+    margin: 100px;
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutPhoto {
+    margin: 50px;
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .aboutTitle {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .aboutText {
+    text-align: center;
+    padding-right: 0px;
+  }
+}
