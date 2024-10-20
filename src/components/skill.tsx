@@ -115,13 +115,13 @@ export default function Skill() {
             </Box>
           ) : (
             <List>
-              {softSkillData.map((item) => (
-                <>
-                <ListItem>
-                  <ListItemText primary={item.name} primaryTypographyProps={{ variant: "body2" }}  />
-                </ListItem>
-                <Divider component="li" />
-                </>
+              {softSkillData.map((item, index) => (
+                <React.Fragment key={index}>
+                  <ListItem>
+                    <ListItemText primary={item.name} primaryTypographyProps={{ variant: "body2" }}  />
+                  </ListItem>
+                  <Divider component="li" />
+                </React.Fragment>
               ))}
             </List>
           )}
@@ -137,13 +137,13 @@ export default function Skill() {
             </Box>
           ) : (
             <List>
-              {hardSkillData.map((item) => (
-                <>
-                <ListItem>
-                  <ListItemText primary={item.name} primaryTypographyProps={{ variant: "body2" }}  />
-                </ListItem>
-                <Divider component="li" />
-                </>
+              {hardSkillData.map((item, index) => (
+                <React.Fragment key={index}>
+                  <ListItem>
+                    <ListItemText primary={item.name} primaryTypographyProps={{ variant: "body2" }}  />
+                  </ListItem>
+                  <Divider component="li" />
+                </React.Fragment>
               ))}
             </List>
           )}
@@ -159,8 +159,9 @@ export default function Skill() {
             </ListItem>
             <Divider component="li" />
             <Stack direction="row" spacing={1} className={styles.stackSkill}>
-              {itSkillLanguageData.map((item) => (
+              {itSkillLanguageData.map((item, index) => (
                 <Chip
+                  key={index}
                   avatar={<Avatar alt="logo" src={item.src} />}
                   label={item.name}
                   variant="outlined"
@@ -178,8 +179,9 @@ export default function Skill() {
             </ListItem>
             <Divider component="li" />
             <Stack direction="row" spacing={1} className={styles.stackSkill}>
-              {itSkillFwlbData.map((item) => (
+              {itSkillFwlbData.map((item, index) => (
                 <Chip
+                  key={index}
                   avatar={<Avatar alt="logo" src={item.src} />}
                   label={item.name}
                   variant="outlined"
@@ -197,8 +199,9 @@ export default function Skill() {
             </ListItem>
             <Divider component="li" />
             <Stack direction="row" spacing={1} className={styles.stackSkill}>
-              {itSkillTechstackData.map((item) => (
+              {itSkillTechstackData.map((item, index) => (
                 <Chip
+                  key = {index}
                   avatar={<Avatar alt="logo" src={item.src} />}
                   label={item.name}
                   variant="outlined"
@@ -216,8 +219,9 @@ export default function Skill() {
             </ListItem>
             <Divider component="li" />
             <Stack direction="row" spacing={1} className={styles.stackSkill}>
-              {itSkillMultimediaData.map((item) => (
+              {itSkillMultimediaData.map((item, index) => (
                 <Chip
+                  key={index}
                   avatar={<Avatar alt="logo" src={item.src} />}
                   label={item.name}
                   variant="outlined"
