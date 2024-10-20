@@ -15,7 +15,7 @@ import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
-import { fetchSoftSkills, fetchHardSkills } from '../api/skillService';
+import { fetchSoftSkills, fetchHardSkills, fetchItSkillsLanguage, fetchItSkillsFwlb, fetchItSkillsTechstack, fetchItSkillsMultimedia } from '../api/skillService';
 
 export default function Skill() {
   const [softSkillData, setSoftSkillData] = useState([]);
@@ -25,6 +25,18 @@ export default function Skill() {
   const [hardSkillData, setHardSkillData] = useState([]);
   const [loadingHardSkill, setLoadingHardSkill] = useState(true);
   const [errorHardSkill, setErrorHardSkill] = useState(null);
+
+  const [itSkillLanguageData, setItSkillLanguageData] = useState([]);
+  const [errorItSkillLanguageData, setErrorItSkillLanguageData] = useState(null);
+
+  const [itSkillFwlbData, setItSkillFwlbData] = useState([]);
+  const [errorItSkillFwlbData, setErrorItSkillFwlbData] = useState(null);
+
+  const [itSkillTechstackData, setItSkillTechstackData] = useState([]);
+  const [errorItSkillTechstackData, setErrorItSkillTechstackData] = useState(null);
+
+  const [itSkillMultimediaData, setItSkillMultimediaData] = useState([]);
+  const [errorItSkillMultimediaData, setErrorItSkillMultimediaData] = useState(null);
 
   useEffect(() => {
     const loadSoftSkills = async() => {
@@ -47,9 +59,47 @@ export default function Skill() {
         setLoadingHardSkill(false);
       }
     };
+    
+    const loadItSkillsLanguage = async() => {
+      try {
+        const data = await fetchItSkillsLanguage();
+        setItSkillLanguageData(data);
+      } catch(err:any) {
+        setErrorItSkillLanguageData(err.message);
+      }
+    };
+    const loadItSkillsFwlb = async() => {
+      try {
+        const data = await fetchItSkillsFwlb();
+        setItSkillFwlbData(data);
+      } catch(err:any) {
+        setErrorItSkillFwlbData(err.message);
+      }
+    };
+    const loadItSkillsTechstack = async() => {
+      try {
+        const data = await fetchItSkillsTechstack();
+        setItSkillTechstackData(data);
+      } catch(err:any) {
+        setErrorItSkillTechstackData(err.message);
+      }
+    };
+    const loadItSkillsMultimedia = async() => {
+      try {
+        const data = await fetchItSkillsMultimedia();
+        setItSkillMultimediaData(data);
+      } catch(err:any) {
+        setErrorItSkillMultimediaData(err.message);
+      }
+    };
 
     loadSoftSkills();
     loadHardSkills();
+
+    loadItSkillsLanguage();
+    loadItSkillsFwlb();
+    loadItSkillsTechstack();
+    loadItSkillsMultimedia();
   }, []);
 
   return (
@@ -99,7 +149,7 @@ export default function Skill() {
           )}
         </div>
 
-        <div className={styles.skill}>
+        <div className={styles.itSkill}>
           <Typography variant="h6" className={styles.title}>
             IT & PROGRAMMING SKILL
           </Typography>
@@ -109,49 +159,77 @@ export default function Skill() {
             </ListItem>
             <Divider component="li" />
             <Stack direction="row" spacing={1} className={styles.stackSkill}>
-              <Chip
-                avatar={<Avatar alt="Natacha" src="https://ucarecdn.com/bd225e83-e140-47b1-a621-49d4f773bdf8/-/preview/666x1000/" />}
-                label="Avatar"
-                variant="outlined"
-                sx={{ width: '20%' }}
-              />
-              <Chip
-                avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
-                label="Avatar"
-                variant="outlined"
-                sx={{ width: '20%' }}
-              />
-              <Chip
-                avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
-                label="Avatar"
-                variant="outlined"
-                sx={{ width: '20%' }}
-              />
-              <Chip
-                avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
-                label="Avatar"
-                variant="outlined"
-                sx={{ width: '20%' }}
-              />
-              <Chip
-                avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
-                label="Avatar"
-                variant="outlined"
-                sx={{ width: '20%' }}
-              />
+              {itSkillLanguageData.map((item) => (
+                <Chip
+                  avatar={<Avatar alt="logo" src={item.src} />}
+                  label={item.name}
+                  variant="outlined"
+                  sx={{
+                    width: '20%',
+                    '@media (max-width: 767px)': {
+                      width: '40%',
+                    },
+                  }}
+                />
+              ))}
             </Stack>
             <ListItem>
               <ListItemText primary="Library & Framework" primaryTypographyProps={{ variant: "body2" }} />
             </ListItem>
             <Divider component="li" />
+            <Stack direction="row" spacing={1} className={styles.stackSkill}>
+              {itSkillFwlbData.map((item) => (
+                <Chip
+                  avatar={<Avatar alt="logo" src={item.src} />}
+                  label={item.name}
+                  variant="outlined"
+                  sx={{
+                    width: '20%',
+                    '@media (max-width: 767px)': {
+                      width: '40%',
+                    },
+                  }}
+                />
+              ))}
+            </Stack>
             <ListItem>
               <ListItemText primary="Tech Stack" primaryTypographyProps={{ variant: "body2" }} />
             </ListItem>
             <Divider component="li" />
+            <Stack direction="row" spacing={1} className={styles.stackSkill}>
+              {itSkillTechstackData.map((item) => (
+                <Chip
+                  avatar={<Avatar alt="logo" src={item.src} />}
+                  label={item.name}
+                  variant="outlined"
+                  sx={{
+                    width: '20%',
+                    '@media (max-width: 767px)': {
+                      width: '40%',
+                    },
+                  }}
+                />
+              ))}
+            </Stack>
             <ListItem>
               <ListItemText primary="Design & Multimedia Tools" primaryTypographyProps={{ variant: "body2" }} />
             </ListItem>
             <Divider component="li" />
+            <Stack direction="row" spacing={1} className={styles.stackSkill}>
+              {itSkillMultimediaData.map((item) => (
+                <Chip
+                  avatar={<Avatar alt="logo" src={item.src} />}
+                  label={item.name}
+                  variant="outlined"
+                  sx={{
+                    width: '20%',
+                    '@media (max-width: 767px)': {
+                      width: '40%',
+                    },
+                  }}
+                />
+              ))}
+            </Stack>
           </List>
         </div>
       </div>

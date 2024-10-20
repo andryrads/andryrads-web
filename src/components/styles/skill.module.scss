@@ -9,8 +9,12 @@
 .title {
   text-align: left;
 }
+.itSkill {
+  width: 40%;
+}
 .stackSkill {
   flex-wrap: wrap;
+  justify-content: flex-end;
   column-gap: 7px;
   row-gap: 14px;
   padding-top: 20px;
@@ -18,6 +22,11 @@
 }
 
 // Responsive section
+@media (max-width: 1024px) {
+  .itSkill {
+    width: 50%;
+  }
+}
 @media (max-width: 767px) {
   .container {
     padding-top: 75px;
@@ -31,7 +40,11 @@
   .title {
     text-align: center;
   }
+  .itSkill {
+    width: 100%;
+  }
   .stackSkill {
+    justify-content: center;
     padding: 20px;
     text-align: center;
   }
