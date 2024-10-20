@@ -8,6 +8,15 @@ import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 
 export default function Portfolio() {
+  const handleDownload = () => {
+    const url = `${process.env.NEXT_PUBLIC_PORTFOLIO_LINK}`;
+    const link = document.createElement('a');
+    link.href = url;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="portfolio">
       <div className={styles.container}>
@@ -39,12 +48,3 @@ export default function Portfolio() {
     </section>
   );
 }
-
-const handleDownload = () => {
-  const url = 'https://drive.google.com/uc?export=download&id=10ctK3kIUxgNYziGgedZc2MWnXoYBGfaA';
-  const link = document.createElement('a');
-  link.href = url;
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
