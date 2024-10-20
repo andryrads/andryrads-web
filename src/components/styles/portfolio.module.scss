@@ -10,6 +10,22 @@
   align-items: center;
   justify-content:center;
 }
+.headTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+.headTitle {
+  margin-bottom: 70px;
+  border-bottom: 7px solid #fff;
+  padding-bottom: 10px;
+}
+.portfolioIcon {
+  width: 50px;
+  height: 50px;
+}
 .narrative {
   font-size: 13px;
   font-weight: 200;
@@ -32,6 +48,12 @@
 @media (max-width: 767px) {
   .container{
     margin-top: 70px;
+  }
+  .headTitleContainer {
+    gap: 30px;
+  }
+  .headTitle {
+    text-align: center;
   }
   .title {
     text-align: center;
