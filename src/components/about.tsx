@@ -18,11 +18,11 @@ export default function About() {
   useEffect(() => {
     const loadAboutData = async () => {
       try {
-        const data = await fetchAbout();
-        setAboutData(data);
+        // const data = await fetchAbout();
+        // setAboutData(data);
+        setAboutData(spareAboutData);
       } catch (err:any) {
         setErrorAboutData(err.message);
-        setAboutData(spareAboutData);
       } finally {
         setLoadingAboutData(false);
       }

@@ -22,11 +22,11 @@ export default function Certification() {
   useEffect(() => {
     const loadCertifications = async () => {
       try {
-        const data = await fetchCertifications();
-        setItemData(data);
+        // const data = await fetchCertifications();
+        // setItemData(data);
+        setItemData(spareItemData);
       } catch (err:any) {
         setError(err.message);
-        setItemData(spareItemData);
       } finally {
         setLoading(false);
       }

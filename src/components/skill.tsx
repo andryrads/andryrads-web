@@ -41,22 +41,22 @@ export default function Skill() {
   useEffect(() => {
     const loadSoftSkills = async() => {
       try {
-        const data = await fetchSoftSkills();
-        setSoftSkillData(data);
+        // const data = await fetchSoftSkills();
+        // setSoftSkillData(data);
+        setSoftSkillData(spareSoftSkillData);
       } catch(err:any) {
         setErrorSoftSkill(err.message);
-        setSoftSkillData(spareSoftSkillData);
       } finally {
         setLoadingSoftSkill(false);
       }
     };
     const loadHardSkills = async() => {
       try {
-        const data = await fetchHardSkills();
-        setHardSkillData(data);
+        // const data = await fetchHardSkills();
+        // setHardSkillData(data);
+        setHardSkillData(spareHardSkillData);
       } catch(err:any) {
         setErrorHardSkill(err.message);
-        setHardSkillData(spareHardSkillData);
       } finally {
         setLoadingHardSkill(false);
       }
@@ -64,38 +64,38 @@ export default function Skill() {
     
     const loadItSkillsLanguage = async() => {
       try {
-        const data = await fetchItSkillsLanguage();
-        setItSkillLanguageData(data);
+        // const data = await fetchItSkillsLanguage();
+        // setItSkillLanguageData(data);
+        setItSkillLanguageData(spareItSkillLanguageData);
       } catch(err:any) {
         setErrorItSkillLanguageData(err.message);
-        setItSkillLanguageData(spareItSkillLanguageData);
       }
     };
     const loadItSkillsFwlb = async() => {
       try {
-        const data = await fetchItSkillsFwlb();
-        setItSkillFwlbData(data);
+        // const data = await fetchItSkillsFwlb();
+        // setItSkillFwlbData(data);
+        setItSkillFwlbData(spareItSkillFwlbData);
       } catch(err:any) {
         setErrorItSkillFwlbData(err.message);
-        setItSkillFwlbData(spareItSkillFwlbData);
       }
     };
     const loadItSkillsTechstack = async() => {
       try {
-        const data = await fetchItSkillsTechstack();
-        setItSkillTechstackData(data);
+        // const data = await fetchItSkillsTechstack();
+        // setItSkillTechstackData(data);
+        setItSkillTechstackData(spareItSkillTechstackData);
       } catch(err:any) {
         setErrorItSkillTechstackData(err.message);
-        setItSkillTechstackData(spareItSkillTechstackData);
       }
     };
     const loadItSkillsMultimedia = async() => {
       try {
-        const data = await fetchItSkillsMultimedia();
-        setItSkillMultimediaData(data);
+        // const data = await fetchItSkillsMultimedia();
+        // setItSkillMultimediaData(data);
+        setItSkillMultimediaData(spareItSkillMultimediaData);
       } catch(err:any) {
         setErrorItSkillMultimediaData(err.message);
-        setItSkillMultimediaData(spareItSkillMultimediaData);
       }
     };
 
