@@ -22,6 +22,7 @@ export default function About() {
         setAboutData(data);
       } catch (err:any) {
         setErrorAboutData(err.message);
+        setAboutData(spareAboutData);
       } finally {
         setLoadingAboutData(false);
       }
@@ -55,3 +56,8 @@ export default function About() {
     </section>
   );
 }
+
+const spareAboutData = {
+  id: 1,
+  content: "Has a high interest in the fields of Computer Technology, Programming, Graphic Design, Multimedia, Industrial Technology, Market Technical Analysis, and Business Development. Enjoying learning new things. Responsible and Reliable to do the work. Being actively involved in an organization enables me to work individually and as a team."
+};
