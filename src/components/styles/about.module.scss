@@ -21,6 +21,7 @@
   font-size: 15px;
   font-weight: 250;
   padding-right: 100px;
+  min-width: 700px;
 }
 // Responsive section
 @media (max-width: 1024px) {
@@ -28,6 +29,9 @@
     margin: 100px;
     width: 300px !important;
     height: 300px !important;
+  }
+  .aboutText {
+    min-width: 500px;
   }
 }
 
@@ -51,5 +55,6 @@
   .aboutText {
     text-align: center;
     padding-right: 0px;
+    min-width: 300px;
   }
 }

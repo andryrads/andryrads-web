@@ -7,6 +7,8 @@ import Typography from '@mui/material/Typography';
 import styles from "./styles/about.module.scss";
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import { useInView } from 'react-intersection-observer';
+import { Typewriter } from 'react-simple-typewriter';
 
 import { fetchAbout } from "../api/regDataService";
 
@@ -14,6 +16,13 @@ export default function About() {
   const [aboutData, setAboutData] = useState('');
   const [loadingAboutData, setLoadingAboutData] = useState(true);
   const [errorAboutData, setErrorAboutData] = useState(null);
+
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   
   useEffect(() => {
     const loadAboutData = async () => {
@@ -31,6 +40,12 @@ export default function About() {
     loadAboutData();
   }, []);
 
+  useEffect(() => {
+    if (inView && !hasAnimated) {
+      setHasAnimated(true);
+    }
+  }, [inView, hasAnimated]);
+
   return (
     <section id="about">
       <div className={styles.container}>
@@ -41,12 +56,22 @@ export default function About() {
         ) : (
           <>
           <Image src="https://ucarecdn.com/5debb094-9933-4f51-ab6b-f7510eff3846/-/preview/1000x1000/" width={400} height={400} layout="responsive" alt="Coding" className={styles.aboutPhoto} />
-          <div className={styles.textBox}>
+          <div className={styles.textBox} ref={ref}>
             <Typography variant="h4" className={styles.aboutTitle}>
               <span className={styles.aboutTitleFirst}>A</span> short about me.
             </Typography>
             <p className={styles.aboutText}>
-              { aboutData.content }
+              {hasAnimated ? (
+                <Typewriter
+                  words={[aboutData.content]}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={1}
+                  delaySpeed={1000}
+                />
+              ) : (
+                ''
+              )}
             </p>
           </div>
           </>
