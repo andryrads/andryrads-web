@@ -15,6 +15,13 @@
 .quoteText {
   font-size: 25px;
   text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 5s ease-out, transform 5s ease-out;
+}
+.quoteText.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .authorText {
   margin-top: 50px;
