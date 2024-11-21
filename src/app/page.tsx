@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Navbar from "../components/navbar"
 import Main from "../components/main"
 import About from "../components/about"
+import Jobedu from "../components/jobedu"
 import Quote from "../components/quote"
 import Skill from "../components/skill"
 import Certification from "../components/certification"
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Main />
         <About />
+        <Jobedu />
         <Quote />
         <Skill />
         <Certification />

@@ -12,7 +12,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 export default function About() {
   const [loadingAboutData, setLoadingAboutData] = useState(true);
-  const [aboutText, setAboutText] = useState("");
+  const [aboutText, setAboutText] = useState('');
   const [hasAnimated, setHasAnimated] = useState(false);
 
   const { ref, inView } = useInView({
