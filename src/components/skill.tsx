@@ -157,7 +157,7 @@ export default function Skill() {
 
         <div className={styles.itSkill}>
           <Typography variant="h6" className={styles.title}>
-            IT & PROGRAMMING SKILL
+            IT SKILL
           </Typography>
           <List>
             <ListItem>

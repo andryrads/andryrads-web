@@ -1,13 +1,22 @@
 .container {
+  background-image: url('https://ucarecdn.com/f334e29a-c1db-4fde-bd7f-5b97449460c7/-/preview/1000x583/');
+  background-size: cover;
+  background-position: default;
+  background-repeat: no-repeat;
   padding-top: 200px;
   display: flex;
   flex-direction: row;
-  background-color: #fff;
   justify-content: space-evenly;
   align-items: flex-start;
+
 }
 .title {
-  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  color: #fff;
+  text-align:center;
 }
 .itSkill {
   width: 40%;
@@ -36,9 +45,6 @@
   }
   .skill {
     margin-bottom: 50px;
-  }
-  .title {
-    text-align: center;
   }
   .itSkill {
     width: 100%;
