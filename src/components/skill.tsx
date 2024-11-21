@@ -258,7 +258,7 @@ const spareSoftSkillData = [
     name: "Management & Planning"
   },
   {
-    name: "Communicatiion"
+    name: "Communication"
   },
   {
     name: "Problem Solving"

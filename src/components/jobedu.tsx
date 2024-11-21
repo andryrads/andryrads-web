@@ -8,7 +8,6 @@ import styles from "./styles/jobedu.module.scss";
 import { useInView } from 'react-intersection-observer';;
 
 export default function Jobedu() {
-  const [hasAnimated, setHasAnimated] = useState(false);
   const [jobEduData, setJobEduData] = useState({
     jobLogo: '',
     jobRole: '',
@@ -17,17 +16,12 @@ export default function Jobedu() {
     eduField: '',
     eduSchool: '',
   });
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
-
-  useEffect(() => {
-    if (inView && !hasAnimated) {
-      setHasAnimated(true);
-    }
-  }, [inView, hasAnimated]);
 
   useEffect(() => {
     const fetchJobeduData = () => {

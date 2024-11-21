@@ -11,13 +11,18 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
-
-import { fetchCertifications } from '../api/certificationService';
+import { useInView } from 'react-intersection-observer';;
 
 export default function Certification() {
   const [itemData, setItemData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
   useEffect(() => {
     const loadCertifications = async () => {
@@ -35,20 +40,26 @@ export default function Certification() {
     loadCertifications();
   }, []);
 
+  useEffect(() => {
+    if (inView && !hasAnimated) {
+      setHasAnimated(true);
+    }
+  }, [inView, hasAnimated]);
+
   return (
     <section id="certification">
-      <div className={styles.container}>
+      <div className={styles.container} ref={ref}>
         {loading ? (
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <CircularProgress color="inherit" />
           </Box>
         ) : (
-          <ImageList>
+            <ImageList>
               <ImageListItem key="Subheader" cols={2}>
                 <ListSubheader component="span" className={styles.headTitle}>Certification</ListSubheader>
               </ImageListItem>
               {itemData.map((item) => (
-                <ImageListItem key={item.src}>
+                <ImageListItem key={item.src} className={`${styles.item} ${hasAnimated ? styles.visible : ""}`}>
                   <img
                     srcSet={`${item.src}`}
                     src={`${item.src}`}
@@ -57,6 +68,8 @@ export default function Certification() {
                   />
                   <ImageListItemBar
                     title={item.name}
+                    position="below"
+                    className={styles.desc}
                   />
                 </ImageListItem>
               ))}
@@ -69,32 +82,32 @@ export default function Certification() {
 
 const spareItemData = [
   {
-    name: "IQ Certificate",
+    name: "IQ Test Certificate",
     src: "https://ucarecdn.com/51a38418-3bb5-4574-9f0a-8746c87a51bc/-/preview/1000x706/"
   },
   {
-    name: "TOEFL Certificate",
+    name: "TOEFL EPrT Certificate",
     src: "https://ucarecdn.com/58ecff99-aac0-4698-a0dc-d4df96e510e6/-/preview/1000x706/"
   },
   {
-    name: "Fundamental Algorithm Certificate",
-    src: "https://ucarecdn.com/8f0b6433-8c5a-4e45-b491-859f549241c9/-/preview/1000x772/"
+    name: "Algorithm Fundamental Certificate",
+    src: "https://ucarecdn.com/d59b0eee-a1ae-4266-ae3c-cd954ccb68dc/-/preview/1000x772/"
   },
   {
     name: "Front-end Basic Certificate",
-    src: "https://ucarecdn.com/9464c7f4-2ffa-4d4f-98ac-b428482f1ed0/-/preview/1000x772/"
+    src: "https://ucarecdn.com/c5943fc1-264d-4a70-8ec9-9bb25ab17094/-/preview/1000x772/"
   },
   {
     name: "Front-end Advance Certificate",
-    src: "https://ucarecdn.com/ed10da24-3288-4d85-8f08-8b38fd72f909/-/preview/1000x772/"
+    src: "https://ucarecdn.com/66dd39be-f62c-4066-9b51-f9d2a66f08a9/-/preview/1000x772/"
   },
   {
     name: "Professional Database Certificate",
-    src: "https://ucarecdn.com/f30c50b5-3f52-4606-b6e6-5d0de7814af9/-/preview/1000x772/"
+    src: "https://ucarecdn.com/b7cf73de-da11-4cef-a76f-16122491610a/-/preview/1000x772/"
   },
   {
-    name: "Laravel Certificate",
-    src: "https://ucarecdn.com/5aadd9e0-62e2-46a3-852d-13ae2747afe7/-/preview/1000x772/"
+    name: "Laravel Framework Certificate",
+    src: "https://ucarecdn.com/ec52466c-3b33-4e5f-8dfc-c6af1c2dc50c/-/preview/1000x772/"
   },
   {
     name: "Javascript Certificate",
