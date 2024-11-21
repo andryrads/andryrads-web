@@ -54,11 +54,10 @@ export default function Jobedu() {
           <div className={`${styles.jobWrapper} ${hasAnimated ? styles.slided : ""}`}>
             <div className={styles.logo}>
             <Image 
-              src={jobEduData.jobLogo}
+              src={jobEduData.jobLogo || 'https://ucarecdn.com/6404d7b9-9c84-449b-9128-49530fc6ae68/-/preview/50x50/'}
               width={50} 
               height={50} 
-              layout="responsive" 
-              alt="Education School"
+              alt="Job Logo"
               className={styles.logoImg} 
             />
             </div>
@@ -80,11 +79,10 @@ export default function Jobedu() {
           <div className={`${styles.eduWrapper} ${hasAnimated ? styles.slided : ""}`}>
             <div className={styles.logo}>
             <Image 
-              src={jobEduData.eduLogo}
+              src={jobEduData.eduLogo || 'https://ucarecdn.com/6404d7b9-9c84-449b-9128-49530fc6ae68/-/preview/50x50/'}
               width={50} 
               height={50} 
-              layout="responsive" 
-              alt="Education School"
+              alt="Education Logo"
               className={styles.logoImg} 
             />
             </div>
