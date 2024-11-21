@@ -1,13 +1,28 @@
 "use client";
 
 import * as React from 'react';
+import { useState, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import styles from "./styles/portfolio.module.scss";
 import Button from '@mui/material/Button';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import { useInView } from 'react-intersection-observer';;
 
 export default function Portfolio() {
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView && !hasAnimated) {
+      setHasAnimated(true);
+    }
+  }, [inView, hasAnimated]);
+
   const handleDownload = () => {
     const url = `${process.env.NEXT_PUBLIC_PORTFOLIO_LINK}`;
     const link = document.createElement('a');
@@ -19,7 +34,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio">
-      <div className={styles.container}>
+      <div className={styles.container} ref={ref}>
         <div className={styles.headTitleContainer}>
           <DashboardIcon className={styles.portfolioIcon} />
           <Typography variant="h5" className={styles.headTitle}>
@@ -28,7 +43,6 @@ export default function Portfolio() {
           <DashboardIcon className={styles.portfolioIcon} />
         </div>
         <p className={styles.narrative}>
-        I have an extensive portfolio of projects in IT and application development, with a particular focus on web development. 
         Over the years, I’ve worked on a wide variety of projects, ranging from dynamic websites and e-commerce platforms to custom web applications tailored to specific client needs. 
         My experience spans across various technologies and frameworks, enabling me to deliver robust, user-friendly, and scalable solutions. 
         Explore my project portfolio to see the breadth and depth of my expertise in the field.
@@ -39,7 +53,7 @@ export default function Portfolio() {
         <Button 
           variant="contained" 
           endIcon={<CloudDownloadIcon />} 
-          className={styles.btnDownload}
+          className={`${styles.btnDownload} ${hasAnimated ? styles.visible : ""}`}
           onClick={handleDownload}
         >
           Download

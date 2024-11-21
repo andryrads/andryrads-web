@@ -39,10 +39,17 @@
   width: 30%;
   background-color: #f7f2f2;
   color: var(--primary-color);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 1s ease-out, transform 2s ease-out;
 }
 .btnDownload:hover {
   background-color: var(--secondary-color);
   color: #fff;
+}
+.btnDownload.visible {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 @media (max-width: 767px) {
