@@ -60,11 +60,14 @@ export default function Certification() {
               </ImageListItem>
               {itemData.map((item) => (
                 <ImageListItem key={item.src} className={`${styles.item} ${hasAnimated ? styles.visible : ""}`}>
-                  <img
-                    srcSet={`${item.src}`}
-                    src={`${item.src}`}
+                  <Image
+                    src={item.src}
                     alt={item.name}
+                    width={500}
+                    height={300}
+                    priority={false}
                     loading="lazy"
+                    style={{ width: '100%', height: 'auto' }}
                   />
                   <ImageListItemBar
                     title={item.name}
