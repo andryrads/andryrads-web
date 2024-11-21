@@ -5,39 +5,34 @@ import { useState, useEffect } from 'react';
 import Image from "next/image";
 import Typography from '@mui/material/Typography';
 import styles from "./styles/about.module.scss";
-import CircularProgress from '@mui/material/CircularProgress';
+import CircularProgress from "@mui/material/CircularProgress";
 import Box from '@mui/material/Box';
 import { useInView } from 'react-intersection-observer';
 import { Typewriter } from 'react-simple-typewriter';
 
-import { fetchAbout } from "../api/regDataService";
-
 export default function About() {
-  const [aboutData, setAboutData] = useState('');
   const [loadingAboutData, setLoadingAboutData] = useState(true);
-  const [errorAboutData, setErrorAboutData] = useState(null);
-
+  const [aboutText, setAboutText] = useState("");
   const [hasAnimated, setHasAnimated] = useState(false);
 
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
-  
+
   useEffect(() => {
-    const loadAboutData = async () => {
-      try {
-        // const data = await fetchAbout();
-        // setAboutData(data);
-        setAboutData(spareAboutData);
-      } catch (err:any) {
-        setErrorAboutData(err.message);
-      } finally {
+    const fetchAboutText = () => {
+      const envText = process.env.NEXT_PUBLIC_ABOUT_TEXT;
+      if (envText) {
+        setAboutText(envText);
         setLoadingAboutData(false);
+      } else {
+        setTimeout(() => {
+          setLoadingAboutData(false);
+        }, 1000);
       }
     };
-
-    loadAboutData();
+    fetchAboutText();
   }, []);
 
   useEffect(() => {
@@ -63,7 +58,7 @@ export default function About() {
             <p className={styles.aboutText}>
               {hasAnimated ? (
                 <Typewriter
-                  words={[aboutData.content]}
+                  words={[aboutText]}
                   cursor
                   cursorStyle="_"
                   typeSpeed={1}
@@ -76,13 +71,7 @@ export default function About() {
           </div>
           </>
         )}
-        
       </div>
     </section>
   );
 }
-
-const spareAboutData = {
-  id: 1,
-  content: "Has a high interest in the fields of Computer Technology, Programming, Graphic Design, Multimedia, Industrial Technology, Market Technical Analysis, and Business Development. Enjoying learning new things. Responsible and Reliable to do the work. Being actively involved in an organization enables me to work individually and as a team."
-};
