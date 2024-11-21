@@ -1,5 +1,5 @@
 .container {
-  padding: 100px;
+  padding: 50px;
   padding-bottom: 30px;
   display: flex;
   flex-direction: row;
@@ -16,7 +16,7 @@
   align-items: center;
 }
 .contactIcon {
-  font-size: 120px;
+  font-size: 75px;
   color: var(--primary-color)
 }
 .contactIcon:hover {
@@ -25,6 +25,7 @@
 .contactText {
   margin-top: 50px;
   font-weight: 250;
+  font-size: 17px;
 }
 .containerWhatsapp {
   padding: 10px;
@@ -56,5 +57,12 @@
 @media (max-width: 767px) {
   .container {
     flex-direction: column;
+    padding: 25px;
+  }
+  .contactCard {
+    padding: 25px;
+  }
+  .contactText {
+    margin-top: 10px;
   }
 }
