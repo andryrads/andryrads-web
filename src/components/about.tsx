@@ -61,7 +61,7 @@ export default function About() {
                   words={[aboutText]}
                   cursor
                   cursorStyle="_"
-                  typeSpeed={1}
+                  typeSpeed={5}
                   delaySpeed={1000}
                 />
               ) : (
