@@ -4,36 +4,27 @@ import * as React from 'react';
 import { useEffect, useState } from "react";
 import Typography from '@mui/material/Typography';
 import styles from "./styles/quote.module.scss";
+import { useInView } from 'react-intersection-observer';
 
 export default function Quote() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    const element = document.querySelector(`.${styles.quoteText}`);
-    if (element) {
-      observer.observe(element);
+    if (inView && !hasAnimated) {
+      setHasAnimated(true);
     }
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  }, [inView, hasAnimated]);
 
   return (
     <section id="quote">
-      <div className={styles.quote}>
+      <div className={styles.quote} ref={ref}>
         <div
-          className={`${styles.quoteText} ${isVisible ? styles.visible : ""}`}
+          className={`${styles.quoteText} ${hasAnimated ? styles.visible : ""}`}
         >
           High effort paired with working smart is like planting a seed in fertile soil; with patience and care, it blossoms into a flourishing garden.
         </div>
