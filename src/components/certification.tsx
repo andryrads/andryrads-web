@@ -56,7 +56,7 @@ export default function Certification() {
         ) : (
             <ImageList>
               <ImageListItem key="Subheader" cols={2}>
-                <ListSubheader component="span" className={styles.headTitle}>Certification</ListSubheader>
+                <ListSubheader component="span" className={styles.headTitle}>Certification & Courses</ListSubheader>
               </ImageListItem>
               {itemData.map((item) => (
                 <ImageListItem key={item.src} className={`${styles.item} ${hasAnimated ? styles.visible : ""}`}>
@@ -94,23 +94,35 @@ const spareItemData = [
   },
   {
     name: "Algorithm Fundamental Certificate",
-    src: "https://ucarecdn.com/d59b0eee-a1ae-4266-ae3c-cd954ccb68dc/-/preview/1000x772/"
+    src: "https://ucarecdn.com/5d611cf8-846c-40b2-9e6a-17cdfe6126d7/-/preview/999x708/"
   },
   {
     name: "Front-end Basic Certificate",
-    src: "https://ucarecdn.com/c5943fc1-264d-4a70-8ec9-9bb25ab17094/-/preview/1000x772/"
+    src: "https://ucarecdn.com/42b1f2db-1ecb-49f4-aaf5-27db89b72428/-/preview/999x708/"
   },
   {
     name: "Front-end Advance Certificate",
-    src: "https://ucarecdn.com/66dd39be-f62c-4066-9b51-f9d2a66f08a9/-/preview/1000x772/"
+    src: "https://ucarecdn.com/8965ee71-2b0f-4165-8b7f-2196122688f0/-/preview/1000x706/"
   },
   {
     name: "Professional Database Certificate",
-    src: "https://ucarecdn.com/b7cf73de-da11-4cef-a76f-16122491610a/-/preview/1000x772/"
+    src: "https://ucarecdn.com/8b0c1037-9eac-4f2f-8059-d760cb2f50f3/-/preview/1000x707/"
   },
   {
     name: "Laravel Framework Certificate",
-    src: "https://ucarecdn.com/ec52466c-3b33-4e5f-8dfc-c6af1c2dc50c/-/preview/1000x772/"
+    src: "https://ucarecdn.com/97b6653e-46f0-486b-b1d7-f27451927977/-/preview/999x708/"
+  },
+  {
+    name: "UI Fundamental Certificate",
+    src: "https://ucarecdn.com/855d8a5e-dd85-465b-bc36-2e5959a949b6/-/preview/1000x707/"
+  },
+  {
+    name: "UX Fundamental Certificate",
+    src: "https://ucarecdn.com/22950daa-70e2-4ec1-9dec-7388a524292b/-/preview/1000x708/"
+  },
+  {
+    name: "Microsoft PowerPoint Certificate",
+    src: "https://ucarecdn.com/bec20abb-1f5d-453a-9592-6167633bd534/-/preview/1000x706/"
   },
   {
     name: "Javascript Certificate",

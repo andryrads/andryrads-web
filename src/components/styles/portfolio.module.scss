@@ -27,7 +27,8 @@
   height: 50px;
 }
 .narrative {
-  font-size: 13px;
+  font-size: 14.5px;
+  line-height: 20px;
   font-weight: 200;
   text-align: center;
 }
@@ -41,7 +42,7 @@
   color: var(--primary-color);
   opacity: 0;
   transform: translateY(-100%);
-  transition: opacity 1s ease-out, transform 2s ease-out;
+  transition: opacity 1s ease-out, transform 2s ease-out, background-color 0.3s;
 }
 .btnDownload:hover {
   background-color: var(--secondary-color);

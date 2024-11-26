@@ -38,10 +38,14 @@
 .btnWhatsapp {
   text-align: center;
   margin: 0 auto;
-  background-color:#25D366;
+  background-color: var(--primary-color);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 .btnWhatsapp:hover {
-  background-color: var(--primary-color);
+  background-color: #25D366;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 // Responsive section
