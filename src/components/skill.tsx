@@ -288,7 +288,7 @@ const spareHardSkillData = [
     name: "Digital Marketing"
   },
   {
-    name: "Fast Typing (85 WPM)"
+    name: "Fast Typing (80 WPM)"
   },
 ];
 
