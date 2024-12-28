@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-        ©{currentYear} - All Rights Reserved. | Developed by Andry Rachdian Sumardi (andryrads)
+        ©{currentYear} - All Rights Reserved. | Developed by andryrads
     </footer>
   );
 }
