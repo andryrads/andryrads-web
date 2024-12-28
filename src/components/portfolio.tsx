@@ -27,6 +27,7 @@ export default function Portfolio() {
     const url = `${process.env.NEXT_PUBLIC_PORTFOLIO_LINK}`;
     const link = document.createElement('a');
     link.href = url;
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
