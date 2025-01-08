@@ -1,9 +1,20 @@
+"use client";
+
 import * as React from 'react';
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Typography from '@mui/material/Typography';
 import styles from "./styles/main.module.scss";
 
 export default function Main() {
+  const hasLogged = React.useRef(false);
+  useEffect(() => {
+    if (!hasLogged.current) {
+      console.log('INFO : My MongoDB free plan is outdated. So the NodeJS Backend currently not used and using static data instead for temporary period.');
+      hasLogged.current = true;
+    }
+  }, []);
+
   return (
     <section id="main">
       <div className={styles.parallax}>
