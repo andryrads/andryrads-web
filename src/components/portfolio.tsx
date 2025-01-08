@@ -44,8 +44,7 @@ export default function Portfolio() {
           <DashboardIcon className={styles.portfolioIcon} />
         </div>
         <p className={styles.narrative}>
-        Over the years, I’ve worked on a wide variety of projects, ranging from dynamic websites and e-commerce platforms to custom web applications tailored to specific client needs. 
-        My experience spans across various technologies and frameworks, enabling me to deliver robust, user-friendly, and scalable solutions. 
+        Over the years, I’ve worked on a wide variety of projects tailored to specific client needs. <br />
         Explore my project portfolio to see the breadth and depth of my expertise in the field.
         </p>
         <Typography variant="h6" className={styles.title}>
