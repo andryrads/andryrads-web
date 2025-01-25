@@ -16,7 +16,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "andryrads website",
-  description: "It's Andryrads, the one who have strong passion in computer technology and programming. Feel free to see more about me.",
+  description: "My name is Andry Rachdian Sumardi. I am deeply passionate about technology and programming. Feel free to learn more about me.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <title>
-          It's me, andryrads
+          It's me, Andry Rachdian Sumardi
         </title>
       </head>
       <body className={roboto.className}>
