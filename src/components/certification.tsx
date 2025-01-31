@@ -17,12 +17,6 @@ export default function Certification() {
   const [itemData, setItemData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
 
   useEffect(() => {
     const loadCertifications = async () => {
@@ -40,15 +34,9 @@ export default function Certification() {
     loadCertifications();
   }, []);
 
-  useEffect(() => {
-    if (inView && !hasAnimated) {
-      setHasAnimated(true);
-    }
-  }, [inView, hasAnimated]);
-
   return (
     <section id="certification">
-      <div className={styles.container} ref={ref}>
+      <div className={styles.container}>
         {loading ? (
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <CircularProgress color="inherit" />
@@ -59,7 +47,7 @@ export default function Certification() {
                 <ListSubheader component="span" className={styles.headTitle}>Certification & Courses</ListSubheader>
               </ImageListItem>
               {itemData.map((item) => (
-                <ImageListItem key={item.src} className={`${styles.item} ${hasAnimated ? styles.visible : ""}`}>
+                <ImageListItem key={item.src} className={styles.item}>
                   <Image
                     src={item.src}
                     alt={item.name}

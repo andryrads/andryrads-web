@@ -7,7 +7,7 @@ import styles from "./styles/portfolio.module.scss";
 import Button from '@mui/material/Button';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import { useInView } from 'react-intersection-observer';;
+import { useInView } from 'react-intersection-observer';
 
 export default function Portfolio() {
   const [hasAnimated, setHasAnimated] = useState(false);
