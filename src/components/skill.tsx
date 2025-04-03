@@ -276,6 +276,12 @@ const spareHardSkillData = [
     name: "Data Analysis"
   },
   {
+    name: "Machine Learning"
+  },
+  {
+    name: "Deep Learning"
+  },
+  {
     name: "Graphic Design"
   },
   {
@@ -388,23 +394,23 @@ const spareItSkillFwlbData = [
   },
   {
     order: 9,
+    name: "Tailwind",
+    src: "https://ucarecdn.com/74e3a5d1-40b6-4fab-aa75-a0b51a807231/-/preview/351x351/"
+  },
+  {
+    order: 10,
+    name: "Wordpress",
+    src: "https://ucarecdn.com/abff4df3-55cf-48a1-a9dc-8587e103a69f/-/preview/1000x1000/"
+  },
+  {
+    order: 11,
     name: "Element UI",
     src: "https://ucarecdn.com/ea123709-f7f3-4ac2-a85d-0d8ca43bccac/-/preview/518x502/"
   },
   {
-    order: 10,
+    order: 12,
     name: "Material UI",
     src: "https://ucarecdn.com/e0841552-ec10-4a0e-ad20-b571913a5155/-/preview/518x502/"
-  },
-  {
-    order: 11,
-    name: "Laravel",
-    src: "https://ucarecdn.com/0739dae4-0418-4b4d-8160-4bfc873cf791/-/preview/518x502/"
-  },
-  {
-    order: 12,
-    name: "Codeigniter",
-    src: "https://ucarecdn.com/b2f8cbca-23ef-43a4-87e8-f95a99f26f3e/-/preview/518x502/"
   },
   {
     order: 13,
@@ -421,6 +427,46 @@ const spareItSkillFwlbData = [
     name: "Jest",
     src: "https://ucarecdn.com/86def076-c793-4df4-b687-aeaa669c5eb2/-/preview/518x502/"
   },
+  {
+    order: 16,
+    name: "Laravel",
+    src: "https://ucarecdn.com/0739dae4-0418-4b4d-8160-4bfc873cf791/-/preview/518x502/"
+  },
+  {
+    order: 17,
+    name: "Codeigniter",
+    src: "https://ucarecdn.com/b2f8cbca-23ef-43a4-87e8-f95a99f26f3e/-/preview/518x502/"
+  },
+  {
+    order: 18,
+    name: "Numpy",
+    src: "https://ucarecdn.com/e68c67fb-aa93-4d7e-8a97-c290f313ae9c/-/preview/256x256/"
+  },
+  {
+    order: 19,
+    name: "Pandas",
+    src: "https://ucarecdn.com/90311f5f-4b14-4184-9e7c-8a5d41439f57/-/preview/512x512/"
+  },
+  {
+    order: 20,
+    name: "NLTK",
+    src: "https://ucarecdn.com/e9a79176-c2a7-48e1-9526-0e2724c3bc3e/-/preview/592x644/"
+  },
+  {
+    order: 21,
+    name: "Scikit Learn",
+    src: "https://ucarecdn.com/89e3bee3-fa23-45ca-a350-0fd99cb7c7bc/-/preview/768x480/"
+  },
+  {
+    order: 22,
+    name: "TensorFlow",
+    src: "https://ucarecdn.com/385393b2-8f3f-4b24-a8bc-756c5831c889/-/preview/932x1000/"
+  },
+  {
+    order: 23,
+    name: "FastAPI",
+    src: "https://ucarecdn.com/b35109bc-be55-4e26-beb1-c44ceaf2870d/-/preview/1000x1000/"
+  },
 ];
 
 const spareItSkillTechstackData = [
@@ -436,7 +482,7 @@ const spareItSkillTechstackData = [
   },
   {
     order: 3,
-    name: "API Development",
+    name: "API Dev",
     src: "https://ucarecdn.com/f73c6a52-b2d4-4ede-a058-1195a4bfc282/-/preview/518x502/"
   },
   {
@@ -448,6 +494,21 @@ const spareItSkillTechstackData = [
     order: 5,
     name: "Office Tools",
     src: "https://ucarecdn.com/23556a66-fd51-4764-ac05-156542dc0d0a/-/preview/518x502/"
+  },
+  {
+    order: 6,
+    name: "Responsive Web Design",
+    src: "https://ucarecdn.com/81b29bb8-55c9-48e1-aba3-98290630438b/-/preview/1000x1000/"
+  },
+  {
+    order: 7,
+    name: "Bash Script",
+    src: "https://ucarecdn.com/0eb43430-92a4-415f-9cc5-e2da09d4bded/-/preview/438x500/"
+  },
+  {
+    order: 8,
+    name: "State Management",
+    src: "https://ucarecdn.com/d9390822-153c-4a61-ad75-cebfdc1f94f1/-/preview/1000x949/"
   },
 ];
 
