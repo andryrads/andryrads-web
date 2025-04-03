@@ -497,7 +497,7 @@ const spareItSkillTechstackData = [
   },
   {
     order: 6,
-    name: "Responsive Web Design",
+    name: "RWD",
     src: "https://ucarecdn.com/81b29bb8-55c9-48e1-aba3-98290630438b/-/preview/1000x1000/"
   },
   {
@@ -507,7 +507,7 @@ const spareItSkillTechstackData = [
   },
   {
     order: 8,
-    name: "State Management",
+    name: "State Mgmt",
     src: "https://ucarecdn.com/d9390822-153c-4a61-ad75-cebfdc1f94f1/-/preview/1000x949/"
   },
 ];
