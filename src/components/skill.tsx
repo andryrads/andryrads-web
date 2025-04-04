@@ -302,52 +302,52 @@ const spareItSkillLanguageData = [
   {
     order: 1,
     name: "Javascript",
-    src: "https://ucarecdn.com/b8ab384e-a7c9-4d3f-a739-c22363ccc52b/-/preview/428x424/"
+    src: "https://ucarecdn.com/a893ccd6-4831-4eda-b9a1-0783776a86ad/-/preview/428x424/"
   },
   {
     order: 2,
     name: "Typescript",
-    src: "https://ucarecdn.com/74a299ec-6a16-4b9a-a353-6921d757ba4b/-/preview/410x424/"
+    src: "https://ucarecdn.com/04af98e2-a41b-484c-93e8-0fde5759f732/-/preview/410x424/"
   },
   {
     order: 3,
     name: "PHP",
-    src: "https://ucarecdn.com/d59a9a9f-7f51-4135-b0b3-ab8b17507a19/-/preview/450x398/"
+    src: "https://ucarecdn.com/0b163d69-4d26-412c-acad-590234abf8ff/-/preview/450x398/"
   },
   {
     order: 4,
     name: "Python",
-    src: "https://ucarecdn.com/50f02af1-3be6-4bab-a3e5-bac89da36473/-/preview/450x398/"
+    src: "https://ucarecdn.com/cbe1b229-0f19-432f-90aa-5bcfbb6ff884/-/preview/450x398/"
   },
   {
     order: 5,
     name: "C#",
-    src: "https://ucarecdn.com/1266ecd0-518a-4f91-abe9-7e1803bc3592/-/preview/546x544/"
+    src: "https://ucarecdn.com/36af0e68-d2a7-4e9e-8359-8b3769b936af/-/preview/546x544/"
   },
   {
     order: 6,
     name: "Pinescript",
-    src: "https://ucarecdn.com/cf47bc78-b276-47a4-9cbb-8aa48e3cbdc9/-/preview/546x544/"
+    src: "https://ucarecdn.com/f3338e0b-5a94-4660-b7b5-ea0f7d53e40c/-/preview/546x544/"
   },
   {
     order: 7,
     name: "HTML",
-    src: "https://ucarecdn.com/de1f0894-6017-4433-8f08-dd0d0daf2c9c/-/preview/522x484/"
+    src: "https://ucarecdn.com/8563a21a-9b2b-46bc-9744-59a9ff61a4fd/-/preview/522x484/"
   },
   {
     order: 8,
     name: "CSS",
-    src: "https://ucarecdn.com/348ae53e-0610-4d82-b33f-589afb5861c4/-/preview/522x484/"
+    src: "https://ucarecdn.com/df57940c-a856-4163-b599-e57d86dc38f5/-/preview/522x484/"
   },
   {
     order: 9,
     name: "SQL",
-    src: "https://ucarecdn.com/5de38b3a-a8d5-441a-bddc-854e6308dbed/-/preview/522x510/"
+    src: "https://ucarecdn.com/b7dde2e6-3bfa-4649-bc0c-205dab06aae3/-/preview/522x510/"
   },
   {
     order: 10,
     name: "NoSQL",
-    src: "https://ucarecdn.com/59bf09c3-9b8e-4f40-99ca-0c57e6564779/-/preview/522x510/"
+    src: "https://ucarecdn.com/da20d646-2c7f-424c-a5aa-39b1a463393c/-/preview/522x510/"
   },
 ];
 
@@ -355,42 +355,42 @@ const spareItSkillFwlbData = [
   {
     order: 1,
     name: "Vue js",
-    src: "https://ucarecdn.com/668bfd32-9b92-434b-b5ca-28c065656c90/-/preview/522x510/"
+    src: "https://ucarecdn.com/88b8d493-bcff-4d70-bb99-65986571a21f/-/preview/522x510/"
   },
   {
     order: 2,
     name: "React js",
-    src: "https://ucarecdn.com/b8742550-7225-4996-bd6f-8a58bab8280d/-/preview/522x510/"
+    src: "https://ucarecdn.com/2b89fd53-11af-4453-af50-abf91b588c35/-/preview/522x510/"
   },
   {
     order: 3,
     name: "Angular js",
-    src: "https://ucarecdn.com/2586b56f-bf1a-480a-8081-e4deeefb3076/-/preview/522x510/"
+    src: "https://ucarecdn.com/12460e07-b173-4064-9fbb-c47ab5844a76/-/preview/522x510/"
   },
   {
     order: 4,
     name: "Nuxt js",
-    src: "https://ucarecdn.com/a0f1f442-a860-4f14-8f4c-b8bb0eef09db/-/preview/646x600/"
+    src: "https://ucarecdn.com/4c741ed7-4e43-47b4-b66b-63a400338f73/-/preview/646x600/"
   },
   {
     order: 5,
     name: "Next js",
-    src: "https://ucarecdn.com/fd50beb8-df6d-4b49-a8f1-a1ecdad487c4/-/preview/646x600/"
+    src: "https://ucarecdn.com/c41a5ce2-c262-476c-ba8b-93f13453e555/-/preview/646x600/"
   },
   {
     order: 6,
     name: "jQuery",
-    src: "https://ucarecdn.com/bc77d997-7124-4b92-b991-ed954acdfc7a/-/preview/498x468/"
+    src: "https://ucarecdn.com/c8b7b0b0-f4bd-4882-b700-5d476e93d6c2/-/preview/498x468/"
   },
   {
     order: 7,
     name: "SASS",
-    src: "https://ucarecdn.com/6bdf3ca8-b40f-449c-8c68-9509b1367d47/-/preview/498x468/"
+    src: "https://ucarecdn.com/1fd0ca36-f0a9-4e63-bd0c-adbc1fd7591d/-/preview/498x468/"
   },
   {
     order: 8,
     name: "Bootstrap",
-    src: "https://ucarecdn.com/f3ba5627-2042-4324-926b-71af5e3fc091/-/preview/498x468/"
+    src: "https://ucarecdn.com/598871ab-bb56-403a-99d5-522243ec8f64/-/preview/498x468/"
   },
   {
     order: 9,
@@ -405,37 +405,37 @@ const spareItSkillFwlbData = [
   {
     order: 11,
     name: "Element UI",
-    src: "https://ucarecdn.com/ea123709-f7f3-4ac2-a85d-0d8ca43bccac/-/preview/518x502/"
+    src: "https://ucarecdn.com/03e250a3-23b6-40bb-bb02-a696b17c89e8/-/preview/518x502/"
   },
   {
     order: 12,
     name: "Material UI",
-    src: "https://ucarecdn.com/e0841552-ec10-4a0e-ad20-b571913a5155/-/preview/518x502/"
+    src: "https://ucarecdn.com/6b796e20-e14e-4f2d-8ccb-61259f565c83/-/preview/518x502/"
   },
   {
     order: 13,
     name: "Node js",
-    src: "https://ucarecdn.com/682e68c7-23fa-4518-a20a-0ae436debd7a/-/preview/518x502/"
+    src: "https://ucarecdn.com/482e130f-9898-46a0-975d-fbd346cb30b0/-/preview/518x502/"
   },
   {
     order: 14,
     name: "Express js",
-    src: "https://ucarecdn.com/754cff65-34c4-47db-8ec2-f20124529832/-/preview/518x502/"
+    src: "https://ucarecdn.com/5f8a849b-f43b-4bac-80d6-ed99fd0ddf05/-/preview/518x502/"
   },
   {
     order: 15,
     name: "Jest",
-    src: "https://ucarecdn.com/86def076-c793-4df4-b687-aeaa669c5eb2/-/preview/518x502/"
+    src: "https://ucarecdn.com/0a4b668a-659b-4925-b4cf-d4c0d1c0413b/-/preview/518x502/"
   },
   {
     order: 16,
     name: "Laravel",
-    src: "https://ucarecdn.com/0739dae4-0418-4b4d-8160-4bfc873cf791/-/preview/518x502/"
+    src: "https://ucarecdn.com/ff9e7f61-da3f-46a3-9abd-ae867cf1012a/-/preview/518x502/"
   },
   {
     order: 17,
     name: "Codeigniter",
-    src: "https://ucarecdn.com/b2f8cbca-23ef-43a4-87e8-f95a99f26f3e/-/preview/518x502/"
+    src: "https://ucarecdn.com/55982822-c5f9-4a63-be2c-f2256ad2495d/-/preview/518x502/"
   },
   {
     order: 18,
@@ -473,27 +473,27 @@ const spareItSkillTechstackData = [
   {
     order: 1,
     name: "Git",
-    src: "https://ucarecdn.com/1abde576-d5c3-4e9b-a721-8b1a0fd6f946/-/preview/518x502/"
+    src: "https://ucarecdn.com/f1a9222a-42dd-4ff9-abe4-643e2ab83991/-/preview/518x502/"
   },
   {
     order: 2,
     name: "Docker",
-    src: "https://ucarecdn.com/f15b28e8-8670-4f35-9687-1b22472923c5/-/preview/518x502/"
+    src: "https://ucarecdn.com/658fe379-a2b5-4986-b813-8764f5c9fe7b/-/preview/518x502/"
   },
   {
     order: 3,
     name: "API Dev",
-    src: "https://ucarecdn.com/f73c6a52-b2d4-4ede-a058-1195a4bfc282/-/preview/518x502/"
+    src: "https://ucarecdn.com/82b10812-096a-41c1-8a68-430dfb6b4708/-/preview/518x502/"
   },
   {
     order: 4,
     name: "Jenkins",
-    src: "https://ucarecdn.com/a8957a79-ff69-4b57-b529-354f04e766b8/-/preview/518x502/"
+    src: "https://ucarecdn.com/0d36181d-d753-444a-b374-6895455ea73c/-/preview/518x502/"
   },
   {
     order: 5,
     name: "Office Tools",
-    src: "https://ucarecdn.com/23556a66-fd51-4764-ac05-156542dc0d0a/-/preview/518x502/"
+    src: "https://ucarecdn.com/25e8cdf1-621c-4381-96c4-cfb40de1e650/-/preview/518x502/"
   },
   {
     order: 6,
@@ -516,26 +516,26 @@ const spareItSkillMultimediaData = [
   {
     order: 1,
     name: "Photoshop",
-    src: "https://ucarecdn.com/297ee5f1-0641-45ca-b02b-df9da8488fbd/-/preview/518x502/"
+    src: "https://ucarecdn.com/d1dedda2-fb3f-420a-aee3-42a0808d1e48/-/preview/518x502/"
   },
   {
     order: 2,
     name: "Premiere",
-    src: "https://ucarecdn.com/f49abc70-3d91-422c-89d9-6ac8f08be2cf/-/preview/518x502/"
+    src: "https://ucarecdn.com/778482e2-0820-4dac-a1c7-42cfbad75fcc/-/preview/518x502/"
   },
   {
     order: 3,
     name: "After Effects",
-    src: "https://ucarecdn.com/257ce09b-8242-480f-8d0e-66dc8abc9468/-/preview/518x502/"
+    src: "https://ucarecdn.com/ba5e5bac-57a3-4f67-88bb-2fb72bea5625/-/preview/518x502/"
   },
   {
     order: 4,
     name: "Figma",
-    src: "https://ucarecdn.com/3a339bb2-9802-4e08-9cfe-ff46a1d0adc9/-/preview/518x502/"
+    src: "https://ucarecdn.com/5934998e-3dc9-44da-bbec-94d1ab16d6b9/-/preview/518x502/"
   },
   {
     order: 5,
     name: "Canva",
-    src: "https://ucarecdn.com/24b3c6a1-d41a-4fa1-9671-f1fb832026f1/-/preview/602x590/"
+    src: "https://ucarecdn.com/482d2326-9f10-4076-b648-9c0c40e2dcac/-/preview/602x590/"
   },
 ];
