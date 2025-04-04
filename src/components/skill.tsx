@@ -498,17 +498,17 @@ const spareItSkillTechstackData = [
   {
     order: 6,
     name: "RWD",
-    src: "https://ucarecdn.com/81b29bb8-55c9-48e1-aba3-98290630438b/-/preview/1000x1000/"
+    src: "https://ucarecdn.com/05705d01-ad93-454a-a644-35010bf8bb38/-/preview/700x700/"
   },
   {
     order: 7,
     name: "Bash Script",
-    src: "https://ucarecdn.com/0eb43430-92a4-415f-9cc5-e2da09d4bded/-/preview/438x500/"
+    src: "https://ucarecdn.com/2cabc848-e078-4581-b6b3-44078dc1db2c/-/preview/700x700/"
   },
   {
     order: 8,
     name: "State Mgmt",
-    src: "https://ucarecdn.com/d9390822-153c-4a61-ad75-cebfdc1f94f1/-/preview/1000x949/"
+    src: "https://ucarecdn.com/be1b5770-af78-4760-aa8f-32111037f395/-/preview/700x700/"
   },
 ];
 
