@@ -168,7 +168,7 @@ export default function Skill() {
                           },
                         },
                       }}
-                    />x
+                    />
                   </ListItem>
                   <Divider component="li" />
                 </React.Fragment>
