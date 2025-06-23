@@ -16,7 +16,8 @@ export default function Jobedu() {
     eduField: '',
     eduSchool: '',
   });
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const [hasAnimatedJob, setHasAnimatedJob] = useState(false);
+  const [hasAnimatedEdu, setHasAnimatedEdu] = useState(false);
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -38,10 +39,15 @@ export default function Jobedu() {
   }, []);
 
   useEffect(() => {
-    if (inView && !hasAnimated) {
-      setHasAnimated(true);
+  if (inView) {
+    setHasAnimatedJob(true);
+      const timer = setTimeout(() => {
+        setHasAnimatedEdu(true);
+      }, 1700);
+
+      return () => clearTimeout(timer);
     }
-  }, [inView, hasAnimated]);
+  }, [inView]);
 
   return (
     <section id="jobedu">
@@ -51,7 +57,7 @@ export default function Jobedu() {
             <span>CURRENT</span> 
             <span className={styles.titleHighlighted}>JOB</span>
           </div>
-          <div className={`${styles.jobWrapper} ${hasAnimated ? styles.slided : ""}`}>
+          <div className={`${styles.jobWrapper} ${hasAnimatedJob ? styles.slided : ""}`}>
             <div className={styles.logo}>
             <Image 
               src={jobEduData.jobLogo || 'https://ucarecdn.com/6404d7b9-9c84-449b-9128-49530fc6ae68/-/preview/50x50/'}
@@ -76,7 +82,7 @@ export default function Jobedu() {
             <span>LATEST</span> 
             <span className={styles.titleHighlighted}>EDUCATION</span>
           </div>
-          <div className={`${styles.eduWrapper} ${hasAnimated ? styles.slided : ""}`}>
+          <div className={`${styles.eduWrapper} ${hasAnimatedEdu ? styles.slided : ""}`}>
             <div className={styles.logo}>
             <Image 
               src={jobEduData.eduLogo || 'https://ucarecdn.com/6404d7b9-9c84-449b-9128-49530fc6ae68/-/preview/50x50/'}

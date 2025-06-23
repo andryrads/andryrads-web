@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import styles from "./styles/portfolio.module.scss";
 import Button from '@mui/material/Button';
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import { useInView } from 'react-intersection-observer';
 
@@ -39,7 +39,7 @@ export default function Portfolio() {
         <div className={styles.headTitleContainer}>
           <DashboardIcon className={styles.portfolioIcon} />
           <Typography variant="h5" className={styles.headTitle}>
-            MY PROJECT PORTFOLIO
+            {"MY PROJECT'S PORTFOLIO"}
           </Typography>
           <DashboardIcon className={styles.portfolioIcon} />
         </div>
@@ -48,15 +48,15 @@ export default function Portfolio() {
         Explore my project portfolio to see the breadth and depth of my expertise in the field.
         </p>
         <Typography variant="h6" className={styles.title}>
-          Download my Project Portfolio as a PDF document :
+          View my Project Portfolio as a PDF document :
         </Typography>
         <Button 
           variant="contained" 
-          endIcon={<CloudDownloadIcon />} 
+          endIcon={<AppRegistrationIcon />} 
           className={`${styles.btnDownload} ${hasAnimated ? styles.visible : ""}`}
           onClick={handleDownload}
         >
-          Download
+          View Portfolio
         </Button>
       </div>
     </section>

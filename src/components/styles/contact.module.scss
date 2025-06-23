@@ -1,9 +1,12 @@
 .container {
-  padding: 50px;
-  padding-bottom: 30px;
+  background-image: url("https://ucarecdn.com/58be15be-f665-4821-875b-7ba865a012ea/-/preview/");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  min-height: 400px;
   display: flex;
   flex-direction: row;
-  background-color: var(--primary-color);
   justify-content: space-evenly;
   align-items: center;
 }
@@ -14,17 +17,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 .contactIcon {
-  font-size: 75px;
-  color: var(--accent-color)
+  font-size: 60px;
+  color: var(--accent-color);
 }
 .contactIcon:hover {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 .contactText {
   color: #fff;
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 250;
   font-size: 17px;
 }
@@ -64,11 +68,26 @@
   .container {
     flex-direction: column;
     padding: 25px;
+    min-height: auto;
   }
+  
   .contactCard {
-    padding: 25px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 0px;
   }
+  .contactCard:first-child {
+    margin-top: 100px;
+  }
+  
+  .contactIcon {
+    font-size: 40px;
+  }
+  
   .contactText {
-    margin-top: 10px;
+    margin-top: 0px;
+    font-size: 16px;
   }
 }

@@ -1,7 +1,11 @@
 .container {
+  background-image: url("https://ucarecdn.com/bbef5471-344d-46de-8c14-5f76a1d0f614/-/preview/");
+  background-size: contain;   
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
-  background-color: #fff;
   justify-content: center;
   align-items: center;
 }
@@ -22,6 +26,8 @@
   font-weight: 250;
   padding-right: 100px;
   min-width: 700px;
+  max-width: 700px;
+  min-height: 120px;
 }
 // Responsive section
 @media (max-width: 1024px) {
@@ -32,6 +38,7 @@
   }
   .aboutText {
     min-width: 500px;
+    min-height: 180px;
   }
 }
 
@@ -56,5 +63,6 @@
     text-align: center;
     padding-right: 0px;
     min-width: 300px;
+    min-height: 220px;
   }
 }
