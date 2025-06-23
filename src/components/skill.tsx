@@ -124,7 +124,18 @@ export default function Skill() {
               {softSkillData.map((item, index) => (
                 <React.Fragment key={index}>
                   <ListItem>
-                    <ListItemText primary={item.name} primaryTypographyProps={{ variant: "body2" }}  />
+                    <ListItemText
+                      primary={item.name}
+                      primaryTypographyProps={{
+                        variant: "body2",
+                        sx: {
+                          textAlign: {
+                            xs: 'center',
+                            sm: 'left',
+                          },
+                        },
+                      }}
+                    />
                   </ListItem>
                   <Divider component="li" />
                 </React.Fragment>
@@ -146,7 +157,18 @@ export default function Skill() {
               {hardSkillData.map((item, index) => (
                 <React.Fragment key={index}>
                   <ListItem>
-                    <ListItemText primary={item.name} primaryTypographyProps={{ variant: "body2" }}  />
+                    <ListItemText
+                      primary={item.name}
+                      primaryTypographyProps={{
+                        variant: "body2",
+                        sx: {
+                          textAlign: {
+                            xs: 'center',
+                            sm: 'left',
+                          },
+                        },
+                      }}
+                    />x
                   </ListItem>
                   <Divider component="li" />
                 </React.Fragment>
