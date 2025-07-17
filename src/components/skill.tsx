@@ -343,31 +343,36 @@ const spareItSkillLanguageData = [
   },
   {
     order: 5,
+    name: "Golang",
+    src: "https://ucarecdn.com/b1712223-5a5d-4524-ba1c-99d52f1458fc/-/preview/1000x884/"
+  },
+  {
+    order: 6,
     name: "C#",
     src: "https://ucarecdn.com/36af0e68-d2a7-4e9e-8359-8b3769b936af/-/preview/546x544/"
   },
   {
-    order: 6,
+    order: 7,
     name: "Pinescript",
     src: "https://ucarecdn.com/f3338e0b-5a94-4660-b7b5-ea0f7d53e40c/-/preview/546x544/"
   },
   {
-    order: 7,
+    order: 8,
     name: "HTML",
     src: "https://ucarecdn.com/8563a21a-9b2b-46bc-9744-59a9ff61a4fd/-/preview/522x484/"
   },
   {
-    order: 8,
+    order: 9,
     name: "CSS",
     src: "https://ucarecdn.com/df57940c-a856-4163-b599-e57d86dc38f5/-/preview/522x484/"
   },
   {
-    order: 9,
+    order: 10,
     name: "SQL",
     src: "https://ucarecdn.com/b7dde2e6-3bfa-4649-bc0c-205dab06aae3/-/preview/522x510/"
   },
   {
-    order: 10,
+    order: 11,
     name: "NoSQL",
     src: "https://ucarecdn.com/da20d646-2c7f-424c-a5aa-39b1a463393c/-/preview/522x510/"
   },
@@ -489,6 +494,11 @@ const spareItSkillFwlbData = [
     name: "FastAPI",
     src: "https://ucarecdn.com/b35109bc-be55-4e26-beb1-c44ceaf2870d/-/preview/1000x1000/"
   },
+  {
+    order: 24,
+    name: "Goravel",
+    src: "https://ucarecdn.com/1060ef0f-c111-4e14-84a1-e62766863a23/-/preview/641x641/"
+  },
 ];
 
 const spareItSkillTechstackData = [
@@ -509,8 +519,8 @@ const spareItSkillTechstackData = [
   },
   {
     order: 4,
-    name: "Jenkins",
-    src: "https://ucarecdn.com/0d36181d-d753-444a-b374-6895455ea73c/-/preview/518x502/"
+    name: "ORM",
+    src: "https://ucarecdn.com/83d0126c-c701-4eb3-b72a-f0365dfe3d96/-/preview/700x700/"
   },
   {
     order: 5,
