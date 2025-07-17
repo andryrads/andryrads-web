@@ -43,7 +43,7 @@ export default function Jobedu() {
     setHasAnimatedJob(true);
       const timer = setTimeout(() => {
         setHasAnimatedEdu(true);
-      }, 1700);
+      }, 500);
 
       return () => clearTimeout(timer);
     }
