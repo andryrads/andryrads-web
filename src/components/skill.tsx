@@ -441,18 +441,18 @@ const spareItSkillFwlbData = [
   },
   {
     order: 13,
+    name: "Jest",
+    src: "https://ucarecdn.com/0a4b668a-659b-4925-b4cf-d4c0d1c0413b/-/preview/518x502/"
+  },
+  {
+    order: 14,
     name: "Node js",
     src: "https://ucarecdn.com/482e130f-9898-46a0-975d-fbd346cb30b0/-/preview/518x502/"
   },
   {
-    order: 14,
+    order: 15,
     name: "Express js",
     src: "https://ucarecdn.com/5f8a849b-f43b-4bac-80d6-ed99fd0ddf05/-/preview/518x502/"
-  },
-  {
-    order: 15,
-    name: "Jest",
-    src: "https://ucarecdn.com/0a4b668a-659b-4925-b4cf-d4c0d1c0413b/-/preview/518x502/"
   },
   {
     order: 16,
@@ -476,28 +476,28 @@ const spareItSkillFwlbData = [
   },
   {
     order: 20,
-    name: "NLTK",
-    src: "https://ucarecdn.com/e9a79176-c2a7-48e1-9526-0e2724c3bc3e/-/preview/592x644/"
-  },
-  {
-    order: 21,
     name: "Scikit Learn",
     src: "https://ucarecdn.com/89e3bee3-fa23-45ca-a350-0fd99cb7c7bc/-/preview/768x480/"
   },
   {
-    order: 22,
+    order: 21,
     name: "TensorFlow",
     src: "https://ucarecdn.com/385393b2-8f3f-4b24-a8bc-756c5831c889/-/preview/932x1000/"
   },
   {
-    order: 23,
+    order: 22,
     name: "FastAPI",
     src: "https://ucarecdn.com/b35109bc-be55-4e26-beb1-c44ceaf2870d/-/preview/1000x1000/"
   },
   {
-    order: 24,
+    order: 23,
     name: "Goravel",
     src: "https://ucarecdn.com/1060ef0f-c111-4e14-84a1-e62766863a23/-/preview/641x641/"
+  },
+   {
+    order: 24,
+    name: "Gin",
+    src: "https://ucarecdn.com/68a959de-ef76-44e5-8943-5e2d42e426f7/-/preview/400x400/"
   },
 ];
 
@@ -534,8 +534,8 @@ const spareItSkillTechstackData = [
   },
   {
     order: 7,
-    name: "Bash Script",
-    src: "https://ucarecdn.com/2cabc848-e078-4581-b6b3-44078dc1db2c/-/preview/700x700/"
+    name: "Websocket",
+    src: "https://ucarecdn.com/2a111e51-4dcb-4388-8f26-e4bb9e9b711c/-/preview/800x800/"
   },
   {
     order: 8,
