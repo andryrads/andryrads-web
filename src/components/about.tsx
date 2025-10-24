@@ -51,7 +51,7 @@ export default function About() {
         ) : (
           <>
           <Image
-            src="https://ucarecdn.com/fbd3145b-ed19-4aaf-ba28-d4eb749e89c5/"
+            src="https://raw.githubusercontent.com/andryrads/file-hosting/refs/heads/main/poly.gif"
             width={200}
             height={200}
             alt="Coding"
