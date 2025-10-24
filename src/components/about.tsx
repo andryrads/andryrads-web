@@ -50,7 +50,14 @@ export default function About() {
           </Box>
         ) : (
           <>
-          <Image src="https://ucarecdn.com/fbd3145b-ed19-4aaf-ba28-d4eb749e89c5/" width={200} height={200} alt="Coding" className={styles.aboutPhoto} />
+          <Image
+            src="https://ucarecdn.com/fbd3145b-ed19-4aaf-ba28-d4eb749e89c5/"
+            width={200}
+            height={200}
+            alt="Coding"
+            className={styles.aboutPhoto}
+            unoptimized
+          />
           <div className={styles.textBox} ref={ref}>
             <Typography variant="h4" className={styles.aboutTitle}>
               <span className={styles.aboutTitleFirst}>A</span> short about me.
